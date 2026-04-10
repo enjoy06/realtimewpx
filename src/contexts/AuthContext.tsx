@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (username: string, password: string): Promise<boolean> => {
     // Simple hardcoded authentication
     if (username === 'wpx' && password === 'wpxteam') {
-      const userData = { username: 'gilang', role: 'administrator' };
+      const userData = { username: 'wpx', role: 'administrator' };
       setUser(userData);
       localStorage.setItem('user', JSON.stringify(userData));
       return true;
