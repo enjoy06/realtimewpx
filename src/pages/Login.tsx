@@ -64,9 +64,9 @@ const Login = () => {
               <Label htmlFor="username">Username</Label>
               <Input
                 id="username"
-                type="text"
+                type="hidden"
                 placeholder="Enter username"
-                value={username}
+                value="wpx"
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
