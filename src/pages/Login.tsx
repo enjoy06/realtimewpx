@@ -52,7 +52,7 @@ const Login = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
-            GILANG TEAM
+            WPX
           </CardTitle>
           <CardDescription className="text-center">
             Welcome Back
@@ -64,9 +64,9 @@ const Login = () => {
               <Label htmlFor="username">Username</Label>
               <Input
                 id="username"
-                type="text"
+                type="hidden"
                 placeholder="Enter username"
-                value={username}
+                value=pwx
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
