@@ -43,7 +43,7 @@ const Header = () => {
         {/* MOBILE HEADER */}
         <div className="flex flex-col md:hidden items-center py-2 gap-2 w-full">
           {/* Logo Center */}
-          <Link to="/" className="text-lg font-bold text-primary text-center w-full">GILANG TEAM</Link>
+          <Link to="/" className="text-lg font-bold text-primary text-center w-full">REALTIME</Link>
           {/* Menu Horizontal */}
           <nav className="w-full flex overflow-x-auto scrollbar-hide whitespace-nowrap">
             {mobileNavigation.map((item) => (
@@ -86,7 +86,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="text-lg sm:text-xl font-bold text-primary">
-              GILANG TEAM
+              REALTIME
             </Link>
           </div>
           {/* Navigation */}
