@@ -66,7 +66,7 @@ const Login = () => {
                 id="username"
                 type="text"
                 placeholder="Enter username"
-                value="wpx"
+                value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
@@ -74,11 +74,11 @@ const Login = () => {
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <Input
-                id="username"
-                type="text"
-                placeholder="Enter username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
