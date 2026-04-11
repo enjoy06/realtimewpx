@@ -66,6 +66,7 @@ const Login = () => {
                 id="username"
                 type="text"
                 placeholder="Enter username"
+                value="wpx"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
