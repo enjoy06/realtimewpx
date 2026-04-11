@@ -61,13 +61,12 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="username">Username</Label>
+              <Label htmlFor="username"></Label>
               <Input
                 id="username"
                 type="hidden"
                 placeholder="Enter username"
                 value="wpx"
-                onChange={(e) => setUsername(e.target.value)}
                 required
               />
             </div>
