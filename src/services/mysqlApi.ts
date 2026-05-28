@@ -8,7 +8,7 @@ class MySQLApiService {
 
   async getLiveClicks(): Promise<VisitData[]> {
     try {
-      const response = await fetch('https://macyates.eu.org/api/visits.php');
+      const response = await fetch('https://re.newbiee.my.id/api/visits.php');
       return await response.json();
     } catch (error) {
       console.error('Error fetching live clicks:', error);
@@ -18,7 +18,7 @@ class MySQLApiService {
 
   async getLiveConversions(): Promise<ConversionData[]> {
     try {
-      const response = await fetch('https://macyates.eu.org/api/get_conversions.php');
+      const response = await fetch('https://re.newbiee.my.id/api/get_conversions.php');
       return await response.json();
     } catch (error) {
       console.error('Error fetching live conversions:', error);
@@ -28,7 +28,7 @@ class MySQLApiService {
 
   async getStatsSummary(): Promise<StatsSummary> {
     try {
-      const response = await fetch('https://macyates.eu.org/api/stats_summary.php');
+      const response = await fetch('https://re.newbiee.my.id/api/stats_summary.php');
       return await response.json();
     } catch (error) {
       console.error('Error fetching stats summary:', error);
@@ -43,7 +43,7 @@ class MySQLApiService {
 
   async getStatsData(startDate: string, endDate: string): Promise<StatsData[]> {
     try {
-      const response = await fetch(`https://macyates.eu.org/api/stats_json.php?start=${startDate}&end=${endDate}`);
+      const response = await fetch(`https://re.newbiee.my.id/api/stats_json.php?start=${startDate}&end=${endDate}`);
       return await response.json();
     } catch (error) {
       console.error('Error fetching stats data:', error);
@@ -53,7 +53,7 @@ class MySQLApiService {
 
   async getTeamPerformance(startDate: string, endDate: string): Promise<TeamPerformance[]> {
     try {
-      const response = await fetch(`https://macyates.eu.org/api/team_performance.php?start=${startDate}&end=${endDate}`);
+      const response = await fetch(`https://re.newbiee.my.id/api/team_performance.php?start=${startDate}&end=${endDate}`);
       return await response.json();
     } catch (error) {
       console.error('Error fetching team performance:', error);
@@ -63,7 +63,7 @@ class MySQLApiService {
 
   async getConversionsByDate(startDate: string, endDate: string): Promise<ConversionData[]> {
     try {
-      const response = await fetch(`https://macyates.eu.org/api/conversions_json.php?start=${startDate}&end=${endDate}`);
+      const response = await fetch(`https://re.newbiee.my.id/api/conversions_json.php?start=${startDate}&end=${endDate}`);
       return await response.json();
     } catch (error) {
       console.error('Error fetching conversions by date:', error);
